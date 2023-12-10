@@ -1,0 +1,195 @@
+%header#home
+  = render partial: 'home/nav'
+  .carousel.slide#carouselExample
+    .carousel-inner
+      .carousel-item.item.active
+        %img.d-block.w-100{ alt: 'First slide',
+                            src: image_path('playback_show_whale_theatre1.jpg') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Second slide',
+                            src: image_path('playback_show_whale_theatre2.jpg') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('playback_show_whale_theatre3.jpg') }
+    %button.carousel-control-prev{"data-bs-slide" => "prev", "data-bs-target" => "#carouselExample", :type => "button"}
+      %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+      %span.visually-hidden Previous
+    %button.carousel-control-next{"data-bs-slide" => "next", "data-bs-target" => "#carouselExample", :type => "button"}
+      %span.carousel-control-next-icon{"aria-hidden" => "true"}
+      %span.visually-hidden Next
+
+  .title
+    %h1
+      = BAND_NAME
+  .download
+    %a.btn.btn-light{ href: '#contact' }
+      %i.fa.fa-bookmark{ 'aria-hidden' => 'true' }
+      Book now!
+.show-stage#no-sense
+  .container
+    .row
+      .col-lg-3
+        %h3
+          Still don't make no sense
+          %span
+        %p
+          Floor lamp? Check. Big suit? Check. A tape they’d like to play? Check.
+          Come and watch as the band blast through all sixteen of the songs from the film, including
+          classics like “Psycho Killer”, “Once in a Lifetime”, “Burning Down the House” and “This Must Be the Place”.
+      .col-lg-9
+        .card-deck
+          .card
+            .card-image
+              .embed-responsive.embed-responsive-16by9
+                %iframe{ allowfullscreen: '',
+                         frameborder: '0',
+                         height: '315',
+                         src: 'https://www.youtube.com/embed/u1UNBKK4w3A',
+                         width: '560' }
+
+.tour#tour.mb-4
+  .container
+    .row
+      .col-lg-4
+        %h3
+          Shows
+          %span
+        %p Book early book often!
+      .col-lg-8
+        .card-group
+          .card
+            .card-body
+              %h4.card-title Monroe's
+              %p.card-text
+                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
+                Galway, Ireland
+              %a.btn.btn-light{ href: 'https://monroes.ie/events/', target: '_blank' } Buy Ticket
+            .card-footer
+              %small.text-muted
+                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
+                Oct 4, 2019
+
+          .card
+            .card-body
+              %h4.card-title Button Factory
+              %p.card-text
+                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
+                Dublin, Ireland
+              %a.btn.btn-light{ href: 'https://www.facebook.com/events/884695848554514/', target: '_blank' } Buy Ticket
+            .card-footer
+              %small.text-muted
+                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
+                Spt 18, 2019
+
+          .card
+            .card-body
+              %h4.card-title Whale Theater
+              %p.card-text
+                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
+                Wicklow, Ireland
+              %a.btn.btn-light{ href: 'https://whaletheatre.ticketsolve.com/shows', target: '_blank' } Buy Ticket
+            .card-footer
+              %small.text-muted
+                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
+                Oct 3, 2018
+
+.about#about
+  .container
+    .row
+      .col-lg-12
+        %h3
+          About
+          %span
+        %p
+          Playback is an "album tribute" band. We cover classic albums in their
+          entirety, then round out our sets with some of the artist's greatest
+          hits. So far our repertoire includes Bob Dylan's Blonde on Blonde,
+          David Bowie's Aladdin Sane and Talking Heads’ Stop Making Sense. We've
+          performed at venues from the Grand Social to the Bello Bar to Arthur's,
+          and we played a Dublin Bowie Festival headline show in January 2018.
+          Our latest project, Still Don’t Make No Sense: The Music of Stop
+          Making Sense, was introduced to a sell out crowd in Greystones’ Whale
+          Theatre in April. The show includes every song from the film as well
+          as classic visual moments like the tape recorder, the lamp dance and
+          the Big Suit. Extra tracks include "Cities", "And She Was" and a full
+          band version of "Psycho Killer".
+        %hr/
+        %br/
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Justin McCann', src: image_path('justin_mccann.jpg') }
+          %h4 Justin McCann
+          %p (vox, keys)
+          %ul
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-twitter{"aria-hidden" => "true"}
+              %a{:href => "#"}
+                %i.fa.fa-facebook{"aria-hidden" => "true"}
+              %a{:href => "#"}
+                %i.fa.fa-instagram{"aria-hidden" => "true"}
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Cathal Farrelly', src: image_path('cathal_farrelly.png') }
+          %h4 Cathal Farrelly
+          %p (vox, guitar, Big Suit)
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Jack Hussey', src: image_path('jack_hussey.png') }
+          %h4 Jack Hussey
+          %p (lead guitar)
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Gordon Dunning', src: image_path('gordon_dunning.png') }
+          %h4 Gordon Dunning
+          %p (bass)
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Mark Finlay', src: image_path('mark_finlay.png') }
+          %h4 Mark Finlay
+          %p (drums)
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Paula Size', src: image_path('paula_size.png') }
+          %h4 Paula Size
+          %p (vox)
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Karen Williams', src: image_path('karen_williams.png') }
+          %h4 Karen Williams
+          %p (vox)
+      .col-lg-3.col-sm-6
+        .box
+          %img{ alt: 'Ronan Slater', src: image_path('ronan_slater.png') }
+          %h4 Ronan Slater
+          %p (percussion)
+
+.contact#contact.mt-5
+  .container
+    .row
+      .col-lg-6
+        .card
+          .card-body
+            %h4.card-title Social Media
+            %p.card-text
+              %i.fa.fa-facebook{ 'aria-hidden' => 'true' }
+              %a{ href: 'https://www.facebook.com/playbackireland/' }
+                https://www.facebook.com/playbackireland/
+              %br
+              %i.fa.fa-instagram{ 'aria-hidden' => 'true' }
+              %a{ href: 'https://www.instagram.com/playback_ireland' }
+                https://www.instagram.com/playback_ireland/
+              %br/
+              %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
+              %a{ href: 'mailto:playbackireland@gmail.com' }
+                playbackireland@gmail.com
+        %br
+        .card
+          .card-body
+            %h4.card-title Justin McCann
+            %p.card-text
+              %i.fa.fa-phone{ 'aria-hidden' => 'true' }
+              %a{ tel: '+353868498387' } +353868498387
+              %br
+              %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
+              %a{ mailto: 'mccannju@tcd.ie' } mccannju@tcd.ie

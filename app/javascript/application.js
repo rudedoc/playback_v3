@@ -1,4 +1,32 @@
-// Entry point for the build script in your package.json
-import "@hotwired/turbo-rails"
-import "./controllers"
 import * as bootstrap from "bootstrap"
+
+// Famous v1.1
+$(document).ready(function () {
+
+  $('.navbar-toggler').on('click', function (e) {
+    e.preventDefault();
+    $('.navbar').addClass('sticky');
+  });
+
+  // Carousel
+  var $item = $('.carousel-item');
+  var $wHeight = $(window).height();
+  $item.eq(0).addClass('active');
+  $item.height($wHeight);
+  $item.addClass('full-screen');
+
+  $('.carousel img').each(function () {
+    var $src = $(this).attr('src');
+    var $color = $(this).attr('data-color');
+    $(this).parent().css({
+      'background-image': 'url(' + $src + ')',
+      'background-color': $color
+    });
+    $(this).remove();
+  });
+
+  $(window).on('resize', function () {
+    $wHeight = $(window).height();
+    $item.height($wHeight);
+  });
+});

@@ -2,7 +2,7 @@ const path    = require("path")
 const webpack = require("webpack")
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   devtool: "source-map",
   entry: {
     application: "./app/javascript/application.js"
@@ -13,6 +13,12 @@ module.exports = {
     path: path.resolve(__dirname, "app/assets/builds"),
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery'
+    }),
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1
     })
