@@ -2,12 +2,27 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title PlaybackV3
     %link{ href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
            rel: 'stylesheet',
            integrity: 'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN',
            crossorigin: 'anonymous' }
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = display_meta_tags title: @title,
+                        description: @description,
+                        canonical: root_url&.chomp('/'),
+                        icon: [{ href: image_path("favicon.ico") },
+                              { href: image_path("favicon-16x16.png"), rel: "icon", sizes: "16x16", type: "image/png" },
+                              { href: image_path("favicon-32x32.png"), rel: "icon", sizes: "32x32", type: "image/png" },
+                              { href: image_path("apple-touch-icon.png"), rel: "apple-touch-icon", sizes: "180x180" },
+                              { href: image_path("android-chrome-192x192.png"), rel: "icon", sizes: "192x192", type: "image/png" },
+                              { href: image_path("android-chrome-512x512.png"), rel: "icon", sizes: "512x512", type: "image/png" }],
+                              og: { title: @title,
+                                    type: "article",
+                                    image: image_path('playback_show_whale_theatre1.webp'),
+                                    description: @description,
+                                    site_name: @title,
+                                    url: root_url&.chomp('/') }
+
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
