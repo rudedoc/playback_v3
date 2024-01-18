@@ -1,6 +1,6 @@
 %header#home
   = render partial: 'home/nav'
-  .carousel.slide#carouselExample
+  .carousel.slide#carouselExample{ 'data-bs-ride' => 'carousel' }
     .carousel-inner
       .carousel-item.item.active
         %img.d-block.w-100{ alt: 'Playback full band on stage',
@@ -78,39 +78,39 @@
         .card-group
           .card
             .card-body
-              %h4.card-title Monroe's
+              %h4.card-title Clonmel
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
-                Galway, Ireland
-              %a.btn.btn-light{ href: 'https://monroes.ie/events/', target: '_blank' } Buy Ticket
+                Tipperary, Ireland
+              %a.btn{ disabled: true } No Tickets Yet
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                Oct 4, 2019
+                9th February
 
           .card
             .card-body
-              %h4.card-title Button Factory
+              %h4.card-title Opium (Bowiefestival)
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
                 Dublin, Ireland
-              %a.btn.btn-light{ href: 'https://www.facebook.com/events/884695848554514/', target: '_blank' } Buy Ticket
+              %a.btn.btn-light{ href: 'https://www.whelanslive.com/ticket/sweet-thing/', target: '_blank' } Buy Ticket
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                Spt 18, 2019
+                10th February
 
           .card
             .card-body
-              %h4.card-title Whale Theater
+              %h4.card-title The Sugar Club
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
-                Wicklow, Ireland
-              %a.btn.btn-light{ href: 'https://whaletheatre.ticketsolve.com/shows', target: '_blank' } Buy Ticket
+                Dublin, Ireland
+              %a.btn.btn-light{ href: 'https://www.sugarclubtickets.com/purchase/playback-performs-talking-heads--stop-making-sense', target: '_blank' } Buy Ticket
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                Oct 3, 2018
+                24th February
 
 .about#about
   .container
@@ -187,10 +187,10 @@
               %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
               %a{ href: 'mailto:playbackireland@gmail.com' }
                 playbackireland@gmail.com
-        %br
+      .col-lg-6
         .card
           .card-body
-            %h4.card-title Justin McCann
+            %h4.card-title Bookings Contact: Justin McCann
             %p.card-text
               %i.fa.fa-phone{ 'aria-hidden' => 'true' }
               %a{ href: 'tel:+353868498387' } +353868498387
