@@ -2,7 +2,7 @@
   = render partial: 'home/nav'
   .carousel.slide#carouselExample{ 'data-bs-ride' => 'carousel' }
     .carousel-inner
-      .carousel-item.item.active
+      .carousel-item.item
         %img.d-block.w-100{ alt: 'Full band on stage',
                             src: image_path('Playback_-23_websize.webp') }
       .carousel-item.item
@@ -83,7 +83,7 @@
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
                 Clonmel, Ireland
-              %a.btn.btn-light{ href: "https://www.eventbrite.ie/e/playback-presents-talking-heads-stop-making-sense-40th-anniversary-tickets-756334174877?fbclid=IwAR1XS0JWbzRZhZTOa_sO27uLWbc7pi--BQvb_F9bnGPIyyjaDviK2jiPRI0", target: "_blank" } By Ticket
+              %a.btn.btn-light{ href: "https://www.eventbrite.ie/e/playback-presents-talking-heads-stop-making-sense-40th-anniversary-tickets-756334174877?fbclid=IwAR1XS0JWbzRZhZTOa_sO27uLWbc7pi--BQvb_F9bnGPIyyjaDviK2jiPRI0", target: "_blank" } Buy Ticket
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
@@ -122,7 +122,7 @@
         %br/
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Justin McCann', src: image_path('headshots/justin_mccann_v2.webp') }
+          %img{ alt: 'Justin McCann', src: image_path('justin_mccann_v2.webp') }
           %h4 Justin McCann
           %p (vox, keys)
           %ul
