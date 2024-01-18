@@ -74,7 +74,7 @@
         %h3
           Shows
           %span
-        %p Book early book often!
+        %p Book early, book often!
       .col-lg-8
         .card-group
           .card
@@ -172,7 +172,7 @@
 .contact#contact.mt-5
   .container
     .row
-      .col-lg-6
+      .col-lg-12
         %h3
           Book the band for your venue
           %span
@@ -204,3 +204,45 @@
               %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
               %a{ href: 'mailto:playbackireland@gmail.com' }
                 playbackireland@gmail.com
+
+.contact#mailing_list
+  .container
+    .row
+      .col-lg-12
+        %h3
+          Sign up for our mailing list
+          %span
+        %p We will send you occasional updates about upcoming shows and other news.
+    .row
+      .col-lg-12
+        #mc_embed_shell
+          %link{:href => "//cdn-images.mailchimp.com/embedcode/classic-061523.css", :rel => "stylesheet", :type => "text/css"}/
+          :css
+            #mc_embed_signup
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          #mc_embed_signup
+            %form#mc-embedded-subscribe-form.validate{:action => "https://playbackireland.us21.list-manage.com/subscribe/post?u=d3593894969c71ce2e299e7e0&id=1b94811d74&f_id=0092ede6f0", :method => "post", :name => "mc-embedded-subscribe-form", :target => "_blank"}
+              #mc_embed_signup_scroll
+                %h2 Subscribe
+                .indicates-required
+                  %span.asterisk *
+                  indicates required
+                .mc-field-group
+                  %label{:for => "mce-EMAIL"}
+                    Email Address
+                    %span.asterisk *
+                  %input#mce-EMAIL.required.email{:name => "EMAIL", :required => "", :type => "email", :value => ""}/
+                  %span#mce-EMAIL-HELPERTEXT.helper_text
+                #mce-responses.clear.foot
+                  #mce-error-response.response{:style => "display: none;"}
+                  #mce-success-response.response{:style => "display: none;"}
+                %div{"aria-hidden" => "true", :style => "position: absolute; left: -5000px;"}
+                  \/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                  %input{:name => "b_d3593894969c71ce2e299e7e0_1b94811d74", :tabindex => "-1", :type => "text", :value => ""}/
+                .optionalParent
+                  .clear.foot
+                    %input#mc-embedded-subscribe.button.btn.btn-light{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+          %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+          :javascript
+            (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);

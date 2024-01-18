@@ -43,8 +43,8 @@ PACKAGES = %w[
 namespace :deploy do
   desc 'copy files to server'
   task :copy_files do
-    `bin/rake assets:clobber`
-    `bin/rake assets:precompile`
+    # `bin/rake assets:clobber`
+    # `bin/rake assets:precompile`
     # download html file from localhost
     index_page = URI.open('http://localhost:3000').read
     File.write('public/index.html', index_page)
@@ -52,11 +52,16 @@ namespace :deploy do
     on roles(:setup) do
       upload!('public/index.html', '/home/ubuntu/index.html')
       # sudo cp /home/ubuntu/index.html /var/www/html/index.html
+      execute 'sudo rm -rf /var/www/html/index.html'
       execute 'sudo cp /home/ubuntu/index.html /var/www/html/index.html'
 
+
       # upload all files in public/assets to /home/ubuntu/assets
+      execute 'sudo rm -rf /home/ubuntu/assets'
       upload!('public/assets', '/home/ubuntu/assets', recursive: true)
+
       # sudo cp -r /home/ubuntu/assets /var/www/html/assets
+      execute 'sudo rm -rf /var/www/html/assets'
       execute 'sudo cp -r /home/ubuntu/assets /var/www/html/assets'
 
       # restart nginx
