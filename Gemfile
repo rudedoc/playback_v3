@@ -56,11 +56,8 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
-
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem "capistrano", "~> 3.10", require: false
+  gem "capistrano-rails", "~> 1.6", require: false
 end
 
 
@@ -69,3 +66,5 @@ gem "haml-rails", "~> 2.1"
 gem "html2haml", "~> 2.3"
 
 gem "meta-tags", "~> 2.19"
+
+gem "sass", "~> 3.7"

@@ -5,7 +5,7 @@ class HomeController < ApplicationController
                    "includes Bob Dylan's Blonde on Blonde, David Bowie's Aladdin Sane and Talking Heads’ Stop Making Sense."
     @sub_title = 'Classic albums | Played live | Dublin | Ireland'
     @title = "#{BAND_NAME} | #{@sub_title}"
-
+    @canonical_url = 'https://playbackireland.com'
     @events = [
       {
         type: 'MusicEvent',

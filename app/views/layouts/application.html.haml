@@ -9,7 +9,7 @@
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     = display_meta_tags title: @title,
                         description: @description,
-                        canonical: root_url&.chomp('/'),
+                        canonical: @canonical_url,
                         icon: [{ href: image_path("favicon.ico") },
                               { href: image_path("favicon-16x16.png"), rel: "icon", sizes: "16x16", type: "image/png" },
                               { href: image_path("favicon-32x32.png"), rel: "icon", sizes: "32x32", type: "image/png" },
@@ -21,9 +21,8 @@
                                     image: image_path('playback_show_whale_theatre1.webp'),
                                     description: @description,
                                     site_name: @title,
-                                    url: root_url&.chomp('/') }
+                                    url: @canonical_url }
 
-    = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
