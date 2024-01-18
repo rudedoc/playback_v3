@@ -3,31 +3,32 @@
   .carousel.slide#carouselExample{ 'data-bs-ride' => 'carousel' }
     .carousel-inner
       .carousel-item.item.active
-        %img.d-block.w-100{ alt: 'Playback full band on stage',
-                            src: image_path('sugarclub/Playback_-5_websize.webp') }
+        %img.d-block.w-100{ alt: 'Full band on stage',
+                            src: image_path('sugarclub/Playback_-23_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Talking Heads fans enjoying the show',
+                            src: image_path('sugarclub/Playback_-65_websize.webp') }
+
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Big crowd at The Sugar Club',
+                            src: image_path('sugarclub/Playback_-28_websize.webp') }
       .carousel-item.item
         %img.d-block.w-100{ alt: 'Paula an Louise on stage',
                             src: image_path('sugarclub/Playback_-7_websize.webp') }
       .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
+        %img.d-block.w-100{ alt: 'Cathal on stage',
                             src: image_path('sugarclub/Playback_-15_websize.webp') }
       .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
+        %img.d-block.w-100{ alt: 'Justin on stage',
                             src: image_path('sugarclub/Playback_-31_websize.webp') }
       .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
-                            src: image_path('sugarclub/Playback_-57_websize.webp') }
-      .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
-                            src: image_path('sugarclub/Playback_-65_websize.webp') }
-      .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
+        %img.d-block.w-100{ alt: 'Cathal with the lamp',
                             src: image_path('sugarclub/Playback_-86_websize.webp') }
       .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
+        %img.d-block.w-100{ alt: 'Gordon on stage',
                             src: image_path('sugarclub/Playback_-129_websize.webp') }
       .carousel-item.item
-        %img.d-block.w-100{ alt: 'Third slide',
+        %img.d-block.w-100{ alt: 'Louise and Paula on stage',
                             src: image_path('sugarclub/Playback_-157_websize.webp') }
     %button.carousel-control-prev{"data-bs-slide" => "prev", "data-bs-target" => "#carouselExample", :type => "button"}
       %span.carousel-control-prev-icon{"aria-hidden" => "true"}
@@ -78,11 +79,11 @@
         .card-group
           .card
             .card-body
-              %h4.card-title Clonmel
+              %h4.card-title O'Keefe's
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
-                Tipperary, Ireland
-              %a.btn{ disabled: true } No Tickets Yet
+                Clonmel, Ireland
+              %a.btn.btn-light{ href: "https://www.eventbrite.ie/e/playback-presents-talking-heads-stop-making-sense-40th-anniversary-tickets-756334174877?fbclid=IwAR1XS0JWbzRZhZTOa_sO27uLWbc7pi--BQvb_F9bnGPIyyjaDviK2jiPRI0", target: "_blank" } By Ticket
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
@@ -172,6 +173,22 @@
   .container
     .row
       .col-lg-6
+        %h3
+          Book the band for your venue
+          %span
+        %p We are available for bookings throughout Ireland and beyond.
+    .row
+      .col-lg-6
+        .card
+          .card-body
+            %h4.card-title Justin McCann
+            %p.card-text
+              %i.fa.fa-phone{ 'aria-hidden' => 'true' }
+              %a{ href: 'tel:+353868498387' } +353868498387
+              %br
+              %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
+              %a{ href: 'mailto:mccannju@tcd.ie' } mccannju@tcd.ie
+      .col-lg-6
         .card
           .card-body
             %h4.card-title Social Media
@@ -187,13 +204,3 @@
               %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
               %a{ href: 'mailto:playbackireland@gmail.com' }
                 playbackireland@gmail.com
-      .col-lg-6
-        .card
-          .card-body
-            %h4.card-title Bookings Contact: Justin McCann
-            %p.card-text
-              %i.fa.fa-phone{ 'aria-hidden' => 'true' }
-              %a{ href: 'tel:+353868498387' } +353868498387
-              %br
-              %i.fa.fa-envelope{ 'aria-hidden' => 'true' }
-              %a{ href: 'mailto:mccannju@tcd.ie' } mccannju@tcd.ie
