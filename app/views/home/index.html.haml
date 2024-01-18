@@ -3,14 +3,32 @@
   .carousel.slide#carouselExample
     .carousel-inner
       .carousel-item.item.active
-        %img.d-block.w-100{ alt: 'First slide',
-                            src: image_path('playback_show_whale_theatre1.webp') }
+        %img.d-block.w-100{ alt: 'Playback full band on stage',
+                            src: image_path('sugarclub/Playback_-5_websize.webp') }
       .carousel-item.item
-        %img.d-block.w-100{ alt: 'Second slide',
-                            src: image_path('playback_show_whale_theatre2.webp') }
+        %img.d-block.w-100{ alt: 'Paula an Louise on stage',
+                            src: image_path('sugarclub/Playback_-7_websize.webp') }
       .carousel-item.item
         %img.d-block.w-100{ alt: 'Third slide',
-                            src: image_path('playback_show_whale_theatre3.webp') }
+                            src: image_path('sugarclub/Playback_-15_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('sugarclub/Playback_-31_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('sugarclub/Playback_-57_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('sugarclub/Playback_-65_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('sugarclub/Playback_-86_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('sugarclub/Playback_-129_websize.webp') }
+      .carousel-item.item
+        %img.d-block.w-100{ alt: 'Third slide',
+                            src: image_path('sugarclub/Playback_-157_websize.webp') }
     %button.carousel-control-prev{"data-bs-slide" => "prev", "data-bs-target" => "#carouselExample", :type => "button"}
       %span.carousel-control-prev-icon{"aria-hidden" => "true"}
       %span.visually-hidden Previous
@@ -98,27 +116,12 @@
   .container
     .row
       .col-lg-12
-        %h3
-          About
-          %span
-        %p
-          Playback is an "album tribute" band. We cover classic albums in their
-          entirety, then round out our sets with some of the artist's greatest
-          hits. So far our repertoire includes Bob Dylan's Blonde on Blonde,
-          David Bowie's Aladdin Sane and Talking Heads’ Stop Making Sense. We've
-          performed at venues from the Grand Social to the Bello Bar to Arthur's,
-          and we played a Dublin Bowie Festival headline show in January 2018.
-          Our latest project, Still Don’t Make No Sense: The Music of Stop
-          Making Sense, was introduced to a sell out crowd in Greystones’ Whale
-          Theatre in April. The show includes every song from the film as well
-          as classic visual moments like the tape recorder, the lamp dance and
-          the Big Suit. Extra tracks include "Cities", "And She Was" and a full
-          band version of "Psycho Killer".
+        = render partial: 'home/about'
         %hr/
         %br/
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Justin McCann', src: image_path('justin_mccann.webp') }
+          %img{ alt: 'Justin McCann', src: image_path('headshots/justin_mccann_v2.webp') }
           %h4 Justin McCann
           %p (vox, keys)
           %ul
@@ -131,37 +134,37 @@
                 %i.fa.fa-instagram{"aria-hidden" => "true"}
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Cathal Farrelly', src: image_path('cathal_farrelly.webp') }
+          %img{ alt: 'Cathal Farrelly', src: image_path('headshots/cathal_farrelly_v2.webp') }
           %h4 Cathal Farrelly
           %p (vox, guitar, Big Suit)
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Jack Hussey', src: image_path('jack_hussey.webp') }
+          %img{ alt: 'Jack Hussey', src: image_path('headshots/jack_hussey_v2.webp') }
           %h4 Jack Hussey
           %p (lead guitar)
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Gordon Dunning', src: image_path('gordon_dunning.webp') }
+          %img{ alt: 'Gordon Dunning', src: image_path('headshots/gordon_dunning_v2.webp') }
           %h4 Gordon Dunning
           %p (bass)
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Mark Finlay', src: image_path('mark_finlay.webp') }
+          %img{ alt: 'Mark Finlay', src: image_path('headshots/mark_finlay_v2.webp') }
           %h4 Mark Finlay
           %p (drums)
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Paula Size', src: image_path('paula_size.webp') }
+          %img{ alt: 'Paula Size', src: image_path('headshots/paula_size_v2.webp') }
           %h4 Paula Size
           %p (vox)
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Karen Williams', src: image_path('karen_williams.webp') }
-          %h4 Karen Williams
+          %img{ alt: 'Louise Carley', src: image_path('headshots/louise_carley_v2.webp') }
+          %h4 Louise Carley
           %p (vox)
       .col-lg-3.col-sm-6
         .box
-          %img{ alt: 'Ronan Slater', src: image_path('ronan_slater.webp') }
+          %img{ alt: 'Ronan Slater', src: image_path('headshots/ronan_slater_v2.webp') }
           %h4 Ronan Slater
           %p (percussion)
 

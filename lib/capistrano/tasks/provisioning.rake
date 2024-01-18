@@ -61,7 +61,6 @@ namespace :deploy do
 
       # restart nginx
       execute 'sudo service nginx restart'
-
     end
   end
 
