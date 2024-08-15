@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Stupid deploy process
 
-Things you may want to cover:
+bin/rake assets:clobber
 
-* Ruby version
+bin/rake assets:precompile
 
-* System dependencies
+bin/rails s (only this not bin/dev)
 
-* Configuration
+rm public/index.html (so new one gets generated)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+cap production deploy:copy_files

@@ -2,6 +2,9 @@
   = render partial: 'home/nav'
   .carousel.slide#carouselExample{ 'data-bs-ride' => 'carousel' }
     .carousel-inner
+      .carousel-item.active.item
+        %img.d-block.w-100{ alt: 'Ambassador Theatre',
+                            src: image_path('ambassador-theatre.jpeg') }
       .carousel-item.item
         %img.d-block.w-100{ alt: 'Full band on stage',
                             src: image_path('Playback_-23_websize.webp') }
@@ -79,40 +82,26 @@
         .card-group
           .card
             .card-body
-              %h4.card-title O'Keefe's
-              %p.card-text
-                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
-                Clonmel, Ireland
-              %a.btn.btn-light{ href: "https://www.eventbrite.ie/e/playback-presents-talking-heads-stop-making-sense-40th-anniversary-tickets-756334174877?fbclid=IwAR1XS0JWbzRZhZTOa_sO27uLWbc7pi--BQvb_F9bnGPIyyjaDviK2jiPRI0", target: "_blank" } Buy Ticket
-            .card-footer
-              %small.text-muted
-                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                9th February
-
-          .card
-            .card-body
-              %h4.card-title Opium (Bowiefestival)
+              %h4.card-title Ambassador Theatre
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
                 Dublin, Ireland
-              %a.btn.btn-light{ href: 'https://www.whelanslive.com/ticket/sweet-thing/', target: '_blank' } Buy Ticket
+              %a.btn.btn-light{ href: 'https://www.ticketmaster.ie/stop-making-sense-tickets/artist/2013355?fbclid=IwY2xjawEq-vlleHRuA2FlbQIxMAABHTnBQ0PKl1xwCV22AM1Z6SNej77EUsc-hfC7WHCX-uN-_ErZlp2SBbGIgg_aem_3zTm6F-4y8-XIOJ-pTlruw', target: '_blank' } Buy Ticket
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                10th February
-
+                25th January
           .card
             .card-body
-              %h4.card-title The Sugar Club
+              %h4.card-title The Mermaid (Bowie)
               %p.card-text
                 %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
-                Dublin, Ireland
-              %a.btn.btn-light{ href: 'https://www.sugarclubtickets.com/purchase/playback-performs-talking-heads--stop-making-sense', target: '_blank' } Buy Ticket
+                Bray, Ireland
+              %a.btn.btn-light{ href: 'https://www.mermaidartscentre.ie/whats-on/events/50-years-of-bowies-diamond-dogs?fbclid=IwY2xjawEq-WpleHRuA2FlbQIxMAABHSUrluTRakViPExtT5XVOxnaoTlm-YOZ1xbprzEY7W--Lpr9q8Wb88BLdQ_aem_FryHam8Sas5muHBO1h5YkA', target: '_blank' } Buy Ticket
             .card-footer
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                24th February
-
+                7th September
 .about#about
   .container
     .row
