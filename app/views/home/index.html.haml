@@ -2,9 +2,6 @@
   = render partial: 'home/nav'
   .carousel.slide#carouselExample{ 'data-bs-ride' => 'carousel' }
     .carousel-inner
-      .carousel-item.active.item
-        %img.d-block.w-100{ alt: 'Ambassador Theatre',
-                            src: image_path('ambassador-theatre.jpeg') }
       .carousel-item.item
         %img.d-block.w-100{ alt: 'Full band on stage',
                             src: image_path('Playback_-23_websize.webp') }
@@ -73,24 +70,13 @@
 .tour#tour.mb-4
   .container
     .row
-      .col-lg-4
+      .col-lg-2
         %h3
           Shows
           %span
         %p Book early, book often!
-      .col-lg-8
+      .col-lg-10
         .card-group
-          .card
-            .card-body
-              %h4.card-title Ambassador Theatre
-              %p.card-text
-                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
-                Dublin, Ireland
-              %a.btn.btn-light{ href: 'https://www.ticketmaster.ie/stop-making-sense-tickets/artist/2013355?fbclid=IwY2xjawEq-vlleHRuA2FlbQIxMAABHTnBQ0PKl1xwCV22AM1Z6SNej77EUsc-hfC7WHCX-uN-_ErZlp2SBbGIgg_aem_3zTm6F-4y8-XIOJ-pTlruw', target: '_blank' } Buy Ticket
-            .card-footer
-              %small.text-muted
-                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
-                25th January
           .card
             .card-body
               %h4.card-title The Mermaid (Bowie)
@@ -102,6 +88,28 @@
               %small.text-muted
                 %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
                 7th September
+          .card
+            .card-body
+              %h4.card-title The Whale Theatre (Talking Heads)
+              %p.card-text
+                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
+                Greystones, Wicklow
+              %a.btn.btn-light{ href: 'https://whaletheatre.ticketsolve.com/ticketbooth/shows/873648536', target: '_blank' } Buy Ticket
+            .card-footer
+              %small.text-muted
+                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
+                22nd & 23rd November (2 nights)
+          .card
+            .card-body
+              %h4.card-title Ambassador Theatre
+              %p.card-text
+                %i.fa.fa-map-marker{ 'aria-hidden' => 'true' }
+                Dublin, Ireland
+              %a.btn.btn-light{ href: 'https://www.ticketmaster.ie/stop-making-sense-tickets/artist/2013355?fbclid=IwY2xjawEq-vlleHRuA2FlbQIxMAABHTnBQ0PKl1xwCV22AM1Z6SNej77EUsc-hfC7WHCX-uN-_ErZlp2SBbGIgg_aem_3zTm6F-4y8-XIOJ-pTlruw', target: '_blank' } Buy Ticket
+            .card-footer
+              %small.text-muted
+                %i.fa.fa-calendar{ 'aria-hidden' => 'true' }
+                25th January
 .about#about
   .container
     .row
